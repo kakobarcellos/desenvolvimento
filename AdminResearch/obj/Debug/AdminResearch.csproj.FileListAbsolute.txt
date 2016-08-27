@@ -31,3 +31,6 @@ c:\users\master-saraiva\documents\visual studio 2015\Projects\MobileResearch\Adm
 c:\users\master-saraiva\documents\visual studio 2015\Projects\MobileResearch\AdminResearch\obj\Debug\AdminResearch.csprojResolveAssemblyReference.cache
 c:\users\master-saraiva\documents\visual studio 2015\Projects\MobileResearch\AdminResearch\obj\Debug\AdminResearch.dll
 c:\users\master-saraiva\documents\visual studio 2015\Projects\MobileResearch\AdminResearch\obj\Debug\AdminResearch.pdb
+C:\appAnalise\AdminResearch\obj\Debug\AdminResearch.csprojResolveAssemblyReference.cache
+C:\appAnalise\AdminResearch\obj\Debug\AdminResearch.dll
+C:\appAnalise\AdminResearch\obj\Debug\AdminResearch.pdb
