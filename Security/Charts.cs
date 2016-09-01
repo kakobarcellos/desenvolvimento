@@ -7,19 +7,18 @@ using System.Data;
 using System.Text;
 using Newtonsoft.Json;
 
-
 namespace Security
 {
     public class Charts : SqlAcess
     {
 
         public Charts() :
-            base("TESTE", null)
+            base("charts", null) //aqui eh o construtor da tabela (nome_tabela)
         {
         }
 
         public Charts(NpgsqlTransaction transaction) :
-            base("TESTE")
+            base("charts") //aqui eh o construtor da tabela (nome_tabela)
         {
             if (transaction != null)
             {
@@ -30,7 +29,7 @@ namespace Security
 
         public DataTable listaTestes(object parametro)
         {
-            string sql = "SELECT * FROM TESTE WHERE TESTE = {0}";
+            string sql = "SELECT * FROM charts WHERE chart_id = {0}";
 
             sql = String.Format(sql, parametro);
             return queryToDataTable(sql);

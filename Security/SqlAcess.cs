@@ -18,6 +18,12 @@ namespace Security
         protected string table;
         private string v;
 
+
+        public SqlAcess(String table)
+        {
+            this.table = table;
+        }
+
         public SqlAcess(String table, NpgsqlTransaction transaction)
         {
             if (transaction != null)
@@ -84,7 +90,7 @@ namespace Security
         }
 
 
-        public string executarQuery(string sql)//Método que executa qualquer query sem retorno(UPDATE, INSERT, DELETE, SET)
+        public string queryExecute(string sql)//Método que executa qualquer query sem retorno(UPDATE, INSERT, DELETE, SET)
         {
             string result;
             var transaction = con.BeginTransaction();
@@ -119,8 +125,9 @@ namespace Security
                 CloseConnection(close);
                 return dataTable;
             }
-            catch (NpgsqlException)
+            catch (NpgsqlException e)
             {
+                throw(e);
                 return null;
             }
         }

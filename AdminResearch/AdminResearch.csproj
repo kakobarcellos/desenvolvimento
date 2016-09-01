@@ -98,6 +98,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="js\charts.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -141,7 +142,6 @@
     <Folder Include="assets\" />
     <Folder Include="css\" />
     <Folder Include="img\" />
-    <Folder Include="js\" />
     <Folder Include="plugins\" />
   </ItemGroup>
   <ItemGroup>
