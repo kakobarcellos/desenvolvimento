@@ -11,7 +11,7 @@ namespace AdminResearch
 {
 
 
-    public partial class _default
+    public partial class questions
     {
     }
 }

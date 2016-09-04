@@ -16,8 +16,6 @@ namespace Security
         public NpgsqlTransaction transaction;
 
         protected string table;
-        private string v;
-
 
         public SqlAcess(String table)
         {
@@ -57,7 +55,7 @@ namespace Security
 
             try
             {
-                this.con.Open();//abre e mostra msg
+                this.con.Open();
                 result = "Conectado ao banco";
             }
             catch (NpgsqlException ex)
@@ -93,13 +91,13 @@ namespace Security
         public string queryExecute(string sql)//Método que executa qualquer query sem retorno(UPDATE, INSERT, DELETE, SET)
         {
             string result;
-            var transaction = con.BeginTransaction();
+            this.OpenConnection();
 
             try
-            {
-                NpgsqlCommand command = new NpgsqlCommand(sql, this.con, transaction);// cria o comendo de acordo com sua conexão e transação
-                command.ExecuteNonQuery();//executa a query especifica aos parâmetros comentados
-                transaction.Commit();// Commita para o banco
+            { 
+                NpgsqlCommand command = new NpgsqlCommand(sql, this.con); // cria o comendo de acordo com sua conexão e transação
+                Int32 rowsaffected = command.ExecuteNonQuery();
+                this.CloseConnection();
                 result = "Transacao aceita";
             }
             catch (NpgsqlException ex)
@@ -111,7 +109,27 @@ namespace Security
             return result;
         }
 
-        public DataTable queryToDataTable(string sql, Boolean close = true)
+
+        public static string limpaLixo(string input)
+        {
+            string textoOK = "";
+
+            if (input != null)
+            {
+                string[] lixo = { "select", "drop", ";", "--", "insert", "delete", "xp_" };
+
+                foreach (string item in lixo)
+                {
+                    textoOK = input.Replace(item, "");
+                }
+
+                textoOK = textoOK.Replace("'", "''");
+            }
+            return textoOK;
+        }
+
+
+        public DataTable queryToDataTable(String sql, Boolean close = true)
         {
             OpenConnection();
             DataTable dataTable = new DataTable();
@@ -128,9 +146,30 @@ namespace Security
             catch (NpgsqlException e)
             {
                 throw(e);
-                return null;
             }
         }
 
+        public DataTable getAllRecords(Boolean close = true)
+        {
+            String sql = "SELECT * FROM {0}";
+            sql = String.Format(sql, table);
+
+            OpenConnection();
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+                NpgsqlCommand command = new NpgsqlCommand(sql, this.con);
+                IDataReader buffer = command.ExecuteReader();
+                dataTable.Load(buffer);
+                buffer.Close();
+                CloseConnection(close);
+                return dataTable;
+            }
+            catch (NpgsqlException e)
+            {
+                throw (e);
+            }
+        }
     }
 }

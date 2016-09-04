@@ -9,14 +9,14 @@ using Newtonsoft.Json;
 
 namespace Security
 {
-    public class Menus : SqlAcess
+    public class Menu : SqlAcess
     {
-        public Menus() :
+        public Menu() :
             base("menus", null) //aqui eh o construtor da tabela (nome_tabela)
         {
         }
 
-        public Menus(NpgsqlTransaction transaction) :
+        public Menu(NpgsqlTransaction transaction) :
             base("menus") //aqui eh o construtor da tabela (nome_tabela)
         {
             if (transaction != null)

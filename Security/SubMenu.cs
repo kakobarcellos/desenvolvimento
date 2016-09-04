@@ -9,14 +9,14 @@ using System;
 
 namespace Security
 {
-    public class SubMenus : SqlAcess
+    public class SubMenu : SqlAcess
     {
-        public SubMenus() :
+        public SubMenu() :
             base("sub_menus", null) //aqui eh o construtor da tabela (nome_tabela)
         {
         }
 
-        public SubMenus(NpgsqlTransaction transaction) :
+        public SubMenu(NpgsqlTransaction transaction) :
             base("sub_menus") //aqui eh o construtor da tabela (nome_tabela)
         {
             if (transaction != null)

@@ -22,8 +22,8 @@ namespace AdminResearch
 
         public void createMenu()
         {
-            Menus menu = new Menus();
-            SubMenus sub_menu = new SubMenus();
+            Security.Menu menu = new Security.Menu();
+            SubMenu sub_menu = new SubMenu();
 
             DataTable resultMenus = new DataTable();
             DataTable resultSubMenus = new DataTable();
@@ -33,9 +33,9 @@ namespace AdminResearch
             for (int i = 0; i < resultMenus.Rows.Count; i++)
             {
                 resultMenu.AppendFormat(@"<li class='menu-dropdown classic-menu-dropdown'>
-                        <a href='javascript:;'> {0}
+                        <a href='{0}'> {1}
                                 <span class='arrow'></span>
-                        </a>", resultMenus.Rows[i]["name"]);
+                        </a>", resultMenus.Rows[i]["url"], resultMenus.Rows[i]["name"]);
 
                 resultSubMenus = sub_menu.getSubMenus(resultMenus.Rows[i]["menu_id"]);
 
@@ -47,10 +47,10 @@ namespace AdminResearch
                         resultMenu.AppendFormat(@"
                         
                             <li class=''>
-                                <a href='layout_mega_menu_light.html' class='nav-link'>{0}</a>
+                                <a href='{0}' class='nav-link'>{1}</a>
                             </li>
                         
-                    ", resultSubMenus.Rows[j]["name"]);
+                    ", resultSubMenus.Rows[j]["url"], resultSubMenus.Rows[j]["name"]);
                     }
                     resultMenu.Append("</ul>");
                 }
