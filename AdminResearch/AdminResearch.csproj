@@ -80,6 +80,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Npgsql, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -98,9 +99,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="answers.aspx" />
     <Content Include="column-with-rotated-series.aspx" />
     <Content Include="css\column-with-rotated-series.css" />
     <Content Include="index.aspx" />
+    <Content Include="js\answers.js" />
     <Content Include="js\app.js" />
     <Content Include="js\charts.js" />
     <Content Include="js\menus.js" />
@@ -115,6 +118,7 @@
     <Content Include="handlers\Default.ashx" />
     <Content Include="handlers\QuestionHandler.ashx" />
     <Content Include="handlers\MenuHandler.ashx" />
+    <Content Include="handlers\AnswerHandler.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,12 +132,22 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="answers.aspx.cs">
+      <DependentUpon>answers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="answers.aspx.designer.cs">
+      <DependentUpon>answers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="column-with-rotated-series.aspx.cs">
       <DependentUpon>column-with-rotated-series.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="column-with-rotated-series.aspx.designer.cs">
       <DependentUpon>column-with-rotated-series.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\AnswerHandler.ashx.cs">
+      <DependentUpon>AnswerHandler.ashx</DependentUpon>
     </Compile>
     <Compile Include="handlers\Default.ashx.cs">
       <DependentUpon>Default.ashx</DependentUpon>

@@ -16,6 +16,8 @@ namespace Security
         public NpgsqlTransaction transaction;
 
         protected string table;
+        protected string fields, values, condition;
+        
 
         public SqlAcess(String table)
         {
@@ -88,25 +90,85 @@ namespace Security
         }
 
 
-        public string queryExecute(string sql)//Método que executa qualquer query sem retorno(UPDATE, INSERT, DELETE, SET)
+        public void AddField(String field, Object value, String type)
         {
-            string result;
+            fields += field + ",";
+
+            if (type == "string")
+            {
+                values += "'" + value + "',";
+            }
+            else if (type == "int")
+            {
+                values += value + ",";
+            }
+            else if (type == "date")
+            {
+                values += "'" + Convert.ToDateTime(value) + "',";
+            }
+            else if (type == "decimal")
+            {
+                values += value.ToString().Replace(",", ".") + ",";
+            }
+        }
+
+
+        public void AddWhere(String field, String valor)
+        {
+            condition = "{0} = {1}";
+
+            condition = String.Format(condition, field, valor);
+        }
+
+
+        public Object Insert()
+        {
+            String sqlInsert = "INSERT INTO {0} ({1}) VALUES ({2}); SELECT id FROM {0} ORDER BY ID DESC LIMIT 1";
+
+            sqlInsert = String.Format(sqlInsert, table, fields.Substring(0, fields.Length - 1), values.Substring(0, values.Length - 1));
+            
+            return queryExecute(sqlInsert);
+        }
+
+
+        public void Update()
+        {
+            String sqlUpdate = "UPDATE {0} ({1}) SET ({2}) WHERE {4}";
+
+            sqlUpdate = String.Format(sqlUpdate, table, fields.Length - 1, values.Length - 1, condition);
+
+            queryExecute(sqlUpdate);
+        }
+
+
+        public void Delete()
+        {
+            String sqlDelete = "DELETE FROM {0} WHERE {1}";
+
+            sqlDelete = String.Format(sqlDelete, table, condition);
+
+            queryExecute(sqlDelete);
+        }
+
+
+        public Object queryExecute(string sql)//Método que executa qualquer query sem retorno(UPDATE, INSERT, DELETE, SET)
+        {
+            Object modified = 0;
             this.OpenConnection();
 
             try
             { 
                 NpgsqlCommand command = new NpgsqlCommand(sql, this.con); // cria o comendo de acordo com sua conexão e transação
                 Int32 rowsaffected = command.ExecuteNonQuery();
+                modified = command.ExecuteScalar();
                 this.CloseConnection();
-                result = "Transacao aceita";
             }
             catch (NpgsqlException ex)
             {
                 transaction.Rollback(); // Em caso de erro cancela (Rollback) a transação.
-                result = ex.Message;
             }
 
-            return result;
+            return modified;
         }
 
 

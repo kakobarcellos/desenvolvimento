@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="questions.aspx.cs" Inherits="AdminResearch.questions" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="answers.aspx.cs" Inherits="AdminResearch.answers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderHead" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceContainer" runat="server">
-    <div class="page-container">
+     <div class="page-container">
             <!-- BEGIN CONTENT -->
         <div class="page-content-wrapper">
             <!-- BEGIN CONTENT BODY -->
@@ -185,50 +185,16 @@
                                     <div class="portlet-title">
                                         <div class="caption font-red-sunglo">
                                             <i class="icon-settings font-red-sunglo"></i>
-                                            <span class="caption-subject bold uppercase"> Crie a sua pergunta</span>
+                                            <span class="caption-subject bold uppercase"> Crie as suas respostas</span>
                                         </div> 
                                     </div>
                                     <div class="portlet-body form">
-                                        <form role="form">
+                                        <form role="form" id="form_answers">
                                             <div class="form-body">
-                                                <div class="form-group">
-                                                    <label>Descrição</label>
-                                                    <input type="hidden" name="description" id="question_id" class="form-control" />
-                                                    <input type="text" name="description" id="description" class="form-control" placeholder="Escreva aqui a descrição" />
-                                                </div> 
-                                                <div class="form-group"> 
-	                                                <label>Radios</label>
-	                                                <div class="mt-radio-list" style="margin-left:50px">
-	                                                    <label class="mt-radio"> Tipo 1
-	                                                        <input type="radio" value="1" name="type" />
-	                                                        <span></span>
-	                                                    </label>
-	                                                    <label class="mt-radio"> Tipo 2
-	                                                        <input type="radio" value="2" name="type" />
-	                                                        <span></span>
-	                                                    </label>
-	                                                    <label class="mt-radio"> Tipo 3
-	                                                        <input type="radio" value="3" name="type" />
-	                                                        <span></span>
-	                                                    </label>
-	                                                </div> 
-                                                </div> 
-                                                <div class="form-group"> 
-	                                                <label>Status</label>
-	                                                <div class="mt-radio-list" style="margin-left:50px">
-	                                                    <label class="mt-radio"> Ativo
-	                                                        <input type="radio" value="True" name="status" />
-	                                                        <span></span>
-	                                                    </label>
-	                                                    <label class="mt-radio"> Cancelado
-	                                                        <input type="radio" value="False" name="status" />
-	                                                        <span></span>
-	                                                    </label>
-	                                                </div> 
-                                                </div> 
-                                                 <div class="form-group"> 
+                                                <div class="form-group" >
+                                                    <label>Descrição</label> 
                                                     <div class="row">
-                                                        <div class="col-md-12" id="fields_div">
+                                                        <div class="col-md-12" id="fields_div"> 
                                                             <div class="col-md-10">
                                                                 <input type="text" name="resposta1" id="resposta1" class="form-control" placeholder="Resposta 1" />
                                                             </div>
@@ -236,38 +202,10 @@
                                                                 <button class="btn green add_field2" type="button">+</button>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-12">
-                                                            <br />
-                                                            <div class="col-md-10">
-                                                                <input type="text" name="resposta2" id="resposta2" class="form-control" placeholder="Resposta 2" />
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="col-md-12">
-                                                            <br />
-                                                            <div class="col-md-10">
-                                                                <input type="text" name="resposta3" id="resposta3" class="form-control" placeholder="Resposta 3" />
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="col-md-12">
-                                                            <br />
-                                                            <div class="col-md-10">
-                                                                <input type="text" name="resposta4" id="resposta4" class="form-control" placeholder="Resposta 4" />
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-12">
-                                                            <br />
-                                                            <div class="col-md-10">
-                                                                <input type="text" name="resposta5" id="resposta5" class="form-control" placeholder="Resposta 5" />
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>  
-                                            </div> 
-
-                                            <div class="form-actions">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-actions" style="position:relative">
                                                 <button type="button" class="btn blue" id="btn_save">Salvar</button>
                                                 <button type="button" class="btn green" id="btn_edit" hidden>Alterar</button>
                                                 <button type="button" class="btn red" id="btn_delete" hidden>Remover</button>
@@ -284,5 +222,5 @@
     </div> 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderFooter" runat="server">
-    <script type="text/javascript" src="js/questions.js"></script>
+    <script type="text/javascript" src="js/answers.js"></script>
 </asp:Content>

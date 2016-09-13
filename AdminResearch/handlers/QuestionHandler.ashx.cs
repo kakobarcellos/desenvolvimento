@@ -41,14 +41,27 @@ namespace AdminResearch.handlers
         private void Insert(HttpContext context)
         {
             Question question = new Question();
+            Answer answer = new Answer();
+
+            Object modified = 0;
 
             try
             {
-                question.Description = context.Request.Form["description"];
-                question.Status = Convert.ToBoolean(context.Request.Form["status"]);
-                question.Type = Convert.ToInt32(context.Request.Form["type"]);
+                question.AddField("description", context.Request.Form["description"], "string");
+                question.AddField("status", context.Request.Form["status"], "int");
+                question.AddField("type", context.Request.Form["type"], "int");
 
-                question.InsertQuestion(question);
+                modified = question.Insert();
+
+                question.AddField("answer1", context.Request.Form["answer1"], "string");
+                question.AddField("answer2", context.Request.Form["answer2"], "string");
+                question.AddField("answer3", context.Request.Form["answer3"], "string");
+                question.AddField("answer4", context.Request.Form["answer4"], "string");
+                question.AddField("answer5", context.Request.Form["answer5"], "string");
+                question.AddField("question_id", modified, "int");
+
+                answer.Insert();
+
             }
             catch (Exception ex)
             {
@@ -63,7 +76,7 @@ namespace AdminResearch.handlers
 
             try
             {
-                question.ID = Convert.ToInt32(context.Request.Form["question_id"]);
+                question.ID = Convert.ToInt32(context.Request.Form["id"]);
                 question.Description = context.Request.Form["description"];
                 question.Status = Convert.ToBoolean(context.Request.Form["status"]);
                 question.Type = Convert.ToInt32(context.Request.Form["type"]);
@@ -83,7 +96,7 @@ namespace AdminResearch.handlers
 
             try
             {
-                question.ID = Convert.ToInt32(context.Request.Form["question_id"]);
+                question.ID = Convert.ToInt32(context.Request.Form["id"]);
 
                 question.DeleteQuestion(question);
             }
@@ -134,7 +147,7 @@ namespace AdminResearch.handlers
 
                 foreach (DataRow dataRow in resultQuestions.Rows)
                 {
-                    result += "[\"" + dataRow["QUESTION_ID"] + "\",\"" + dataRow["DESCRIPTION"] + "\",\"" + dataRow["STATUS"] + "\",\"" + dataRow["TYPE"] + "\"],";
+                    result += "[\"" + dataRow["ID"] + "\",\"" + dataRow["DESCRIPTION"] + "\",\"" + dataRow["STATUS"] + "\",\"" + dataRow["TYPE"] + "\"],";
                 }
 
                 if (resultQuestions.Rows.Count != 0)
@@ -161,7 +174,7 @@ namespace AdminResearch.handlers
             DataTable result = new DataTable();
             String resultJson = String.Empty;
 
-            question.ID = Convert.ToInt32(context.Request.Form["question_id"]);
+            question.ID = Convert.ToInt32(context.Request.Form["id"]);
             result = question.SetQuestion(question);
             resultJson = functions.DataTableToJson(result);
 

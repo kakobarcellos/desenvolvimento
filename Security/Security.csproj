@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Answer.cs" />
     <Compile Include="Charts.cs" />
     <Compile Include="functions.cs" />
     <Compile Include="Menu.cs" />

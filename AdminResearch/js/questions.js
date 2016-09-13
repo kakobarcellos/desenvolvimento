@@ -6,9 +6,20 @@ $(function () {
     initGrids();
 });
 
+
+var field_id = 2;
+
+$(".add_field" + field_id).click(function () {
+    $("#fields_div").append("<div class='col-md-10'><br/><input type='text' name='resposta" + field_id + "' id='resposta" + field_id + "' class='form-control' placeholder='Resposta " + field_id + "'/></div><div class='col-md-2'><br/><button class='btn green add_field" + field_id + "' type='button'>+</button></div>");
+
+    field_id++;
+
+    $(this).remove();
+});
+
+
 function initButtons() {
     $("#btn_save").click(function () {
-        alert("oi");
         $.ajax({
             type: "POST",
             url: "handlers/QuestionHandler.ashx?action=insert",
@@ -105,7 +116,7 @@ function showRecord(question_id) {
             "question_id": question_id
         },
         success: function (data) {
-            $("#question_id").val(data.question_id),
+            $("#question_id").val(data.id),
             $("#description").val(data.description),
             setRadio("status", data.status);
             setRadio("type", data.type);

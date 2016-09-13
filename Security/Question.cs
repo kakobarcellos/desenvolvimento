@@ -41,7 +41,7 @@ namespace Security
 
         public void UpdateQuestion(Question question)
         {
-            String sql = "UPDATE QUESTIONS SET DESCRIPTION = '{0}', STATUS = {1}, TYPE = {2} WHERE QUESTION_ID = {4}";
+            String sql = "UPDATE QUESTIONS SET DESCRIPTION = '{0}', STATUS = {1}, TYPE = {2} WHERE ID = {4}";
 
             sql = String.Format(sql, question.Description, question.Status, question.Type, question.ID);
             question.queryExecute(sql);
@@ -49,7 +49,7 @@ namespace Security
 
         public void DeleteQuestion(Question question)
         {
-            String sql = "DELETE QUESTIONS WHERE QUESTION_ID = {0}";
+            String sql = "DELETE QUESTIONS WHERE ID = {0}";
 
             sql = String.Format(sql, question.ID);
             question.queryExecute(sql);
@@ -66,11 +66,11 @@ namespace Security
                             FROM
 	                            (
 		                            SELECT
-                                        QUESTION_ID,
+                                        ID,
                                         DESCRIPTION,
 			                            TYPE, 
                                         STATUS,
-			                            ROW_NUMBER () OVER (ORDER BY QUESTION_ID) AS RowNumber
+			                            ROW_NUMBER () OVER (ORDER BY ID) AS RowNumber
 		                            FROM
 			                            QUESTIONS
                                         ";
@@ -88,7 +88,7 @@ namespace Security
 
         public DataTable SetQuestion(Question question)
         {
-            String sql = "SELECT * FROM QUESTIONS WHERE QUESTION_ID = {0}";
+            String sql = "SELECT * FROM QUESTIONS WHERE ID = {0}";
 
             sql = String.Format(sql, question.ID);
             return queryToDataTable(sql);

@@ -35,6 +35,5 @@ C:\appAnalise\AdminResearch\obj\Debug\AdminResearch.csprojResolveAssemblyReferen
 C:\appAnalise\AdminResearch\obj\Debug\AdminResearch.dll
 C:\appAnalise\AdminResearch\obj\Debug\AdminResearch.pdb
 C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\AdminResearch\bin\Security.dll
-C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\AdminResearch\bin\Npgsql.dll
 C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\AdminResearch\bin\Mono.Security.dll
 C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\AdminResearch\bin\Security.pdb
