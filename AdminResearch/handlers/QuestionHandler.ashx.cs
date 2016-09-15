@@ -42,7 +42,6 @@ namespace AdminResearch.handlers
         {
             Question question = new Question();
             Answer answer = new Answer();
-
             Object modified = 0;
 
             try
@@ -53,12 +52,12 @@ namespace AdminResearch.handlers
 
                 modified = question.Insert();
 
-                question.AddField("answer1", context.Request.Form["answer1"], "string");
-                question.AddField("answer2", context.Request.Form["answer2"], "string");
-                question.AddField("answer3", context.Request.Form["answer3"], "string");
-                question.AddField("answer4", context.Request.Form["answer4"], "string");
-                question.AddField("answer5", context.Request.Form["answer5"], "string");
-                question.AddField("question_id", modified, "int");
+                answer.AddField("answer1", context.Request.Form["answer1"], "string");
+                answer.AddField("answer2", context.Request.Form["answer2"], "string");
+                answer.AddField("answer3", context.Request.Form["answer3"], "string");
+                answer.AddField("answer4", context.Request.Form["answer4"], "string");
+                answer.AddField("answer5", context.Request.Form["answer5"], "string");
+                answer.AddField("question_id", modified, "int");
 
                 answer.Insert();
 

@@ -107,18 +107,21 @@
     <Content Include="js\app.js" />
     <Content Include="js\charts.js" />
     <Content Include="js\menus.js" />
+    <Content Include="js\portlet-draggable.js" />
     <Content Include="js\questions.js" />
     <Content Include="menus.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="portlet-draggable.aspx" />
     <Content Include="questions.aspx" />
     <Content Include="Site.Master" />
     <Content Include="handlers\Default.ashx" />
     <Content Include="handlers\QuestionHandler.ashx" />
     <Content Include="handlers\MenuHandler.ashx" />
     <Content Include="handlers\AnswerHandler.ashx" />
+    <Content Include="handlers\CardHandler.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -149,6 +152,9 @@
     <Compile Include="handlers\AnswerHandler.ashx.cs">
       <DependentUpon>AnswerHandler.ashx</DependentUpon>
     </Compile>
+    <Compile Include="handlers\CardHandler.ashx.cs">
+      <DependentUpon>CardHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="handlers\Default.ashx.cs">
       <DependentUpon>Default.ashx</DependentUpon>
     </Compile>
@@ -171,6 +177,13 @@
     </Compile>
     <Compile Include="menus.aspx.designer.cs">
       <DependentUpon>menus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portlet-draggable.aspx.cs">
+      <DependentUpon>portlet-draggable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portlet-draggable.aspx.designer.cs">
+      <DependentUpon>portlet-draggable.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="questions.aspx.cs">
