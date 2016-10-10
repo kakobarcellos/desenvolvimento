@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SARAIVA</Machine>
+    <WindowsUser>master-saraiva</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>release|anycpu</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>io.cordova.myapp2a1cbe</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Apache Cordova Team</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\build\windows\release\anycpu\win8.1\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\css\img\icons.png">
+      <PackagePath>www\css\img\icons.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\apple-touch-icon.png">
+      <PackagePath>www\images\apple-touch-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\apple-touch-startup-image-320x460.png">
+      <PackagePath>www\images\apple-touch-startup-image-320x460.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\apple-touch-startup-image-640x920.png">
+      <PackagePath>www\images\apple-touch-startup-image-640x920.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\author.png">
+      <PackagePath>www\images\author.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\bullet.png">
+      <PackagePath>www\images\bullet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\comments.png">
+      <PackagePath>www\images\comments.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\cordova.png">
+      <PackagePath>www\images\cordova.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\date.png">
+      <PackagePath>www\images\date.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\back.png">
+      <PackagePath>www\images\icons\black\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\bike.png">
+      <PackagePath>www\images\icons\black\bike.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\blog.png">
+      <PackagePath>www\images\icons\black\blog.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\briefcase.png">
+      <PackagePath>www\images\icons\black\briefcase.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\building.png">
+      <PackagePath>www\images\icons\black\building.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\bus.png">
+      <PackagePath>www\images\icons\black\bus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\car.png">
+      <PackagePath>www\images\icons\black\car.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\cart.png">
+      <PackagePath>www\images\icons\black\cart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\categories.png">
+      <PackagePath>www\images\icons\black\categories.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\contact.png">
+      <PackagePath>www\images\icons\black\contact.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\dribbble.png">
+      <PackagePath>www\images\icons\black\dribbble.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\drink.png">
+      <PackagePath>www\images\icons\black\drink.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\electronics.png">
+      <PackagePath>www\images\icons\black\electronics.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\facebook.png">
+      <PackagePath>www\images\icons\black\facebook.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\favorites.png">
+      <PackagePath>www\images\icons\black\favorites.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\features.png">
+      <PackagePath>www\images\icons\black\features.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\food.png">
+      <PackagePath>www\images\icons\black\food.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\form.png">
+      <PackagePath>www\images\icons\black\form.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\gift.png">
+      <PackagePath>www\images\icons\black\gift.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\gplus.png">
+      <PackagePath>www\images\icons\black\gplus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\home.png">
+      <PackagePath>www\images\icons\black\home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\instagram.png">
+      <PackagePath>www\images\icons\black\instagram.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\like.png">
+      <PackagePath>www\images\icons\black\like.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\linkedin.png">
+      <PackagePath>www\images\icons\black\linkedin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\lock.png">
+      <PackagePath>www\images\icons\black\lock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\logout.png">
+      <PackagePath>www\images\icons\black\logout.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\love.png">
+      <PackagePath>www\images\icons\black\love.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\map.png">
+      <PackagePath>www\images\icons\black\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\menu.png">
+      <PackagePath>www\images\icons\black\menu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\menu_close.png">
+      <PackagePath>www\images\icons\black\menu_close.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\message.png">
+      <PackagePath>www\images\icons\black\message.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\mobile.png">
+      <PackagePath>www\images\icons\black\mobile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\more.png">
+      <PackagePath>www\images\icons\black\more.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\music.png">
+      <PackagePath>www\images\icons\black\music.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\next.png">
+      <PackagePath>www\images\icons\black\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\orders.png">
+      <PackagePath>www\images\icons\black\orders.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\phone.png">
+      <PackagePath>www\images\icons\black\phone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\photos.png">
+      <PackagePath>www\images\icons\black\photos.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\piechart.png">
+      <PackagePath>www\images\icons\black\piechart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\pinterest.png">
+      <PackagePath>www\images\icons\black\pinterest.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\plus.png">
+      <PackagePath>www\images\icons\black\plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\rocket.png">
+      <PackagePath>www\images\icons\black\rocket.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\search.png">
+      <PackagePath>www\images\icons\black\search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\settings.png">
+      <PackagePath>www\images\icons\black\settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\shop.png">
+      <PackagePath>www\images\icons\black\shop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\slider.png">
+      <PackagePath>www\images\icons\black\slider.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\tables.png">
+      <PackagePath>www\images\icons\black\tables.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\tabs.png">
+      <PackagePath>www\images\icons\black\tabs.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\toggle.png">
+      <PackagePath>www\images\icons\black\toggle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\trash.png">
+      <PackagePath>www\images\icons\black\trash.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\twitter.png">
+      <PackagePath>www\images\icons\black\twitter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\user.png">
+      <PackagePath>www\images\icons\black\user.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\users.png">
+      <PackagePath>www\images\icons\black\users.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\black\video.png">
+      <PackagePath>www\images\icons\black\video.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\back.png">
+      <PackagePath>www\images\icons\white\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\bike.png">
+      <PackagePath>www\images\icons\white\bike.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\blog.png">
+      <PackagePath>www\images\icons\white\blog.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\briefcase.png">
+      <PackagePath>www\images\icons\white\briefcase.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\bus.png">
+      <PackagePath>www\images\icons\white\bus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\car.png">
+      <PackagePath>www\images\icons\white\car.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\cart.png">
+      <PackagePath>www\images\icons\white\cart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\categories.png">
+      <PackagePath>www\images\icons\white\categories.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\contact.png">
+      <PackagePath>www\images\icons\white\contact.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\dribbble.png">
+      <PackagePath>www\images\icons\white\dribbble.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\drink.png">
+      <PackagePath>www\images\icons\white\drink.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\electronics.png">
+      <PackagePath>www\images\icons\white\electronics.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\facebook.png">
+      <PackagePath>www\images\icons\white\facebook.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\favorites.png">
+      <PackagePath>www\images\icons\white\favorites.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\features.png">
+      <PackagePath>www\images\icons\white\features.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\food.png">
+      <PackagePath>www\images\icons\white\food.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\form.png">
+      <PackagePath>www\images\icons\white\form.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\gift.png">
+      <PackagePath>www\images\icons\white\gift.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\gplus.png">
+      <PackagePath>www\images\icons\white\gplus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\home.png">
+      <PackagePath>www\images\icons\white\home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\instagram.png">
+      <PackagePath>www\images\icons\white\instagram.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\like.png">
+      <PackagePath>www\images\icons\white\like.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\linkedin.png">
+      <PackagePath>www\images\icons\white\linkedin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\lock.png">
+      <PackagePath>www\images\icons\white\lock.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\logout.png">
+      <PackagePath>www\images\icons\white\logout.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\love.png">
+      <PackagePath>www\images\icons\white\love.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\map.png">
+      <PackagePath>www\images\icons\white\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\menu.png">
+      <PackagePath>www\images\icons\white\menu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\menu_close.png">
+      <PackagePath>www\images\icons\white\menu_close.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\message.png">
+      <PackagePath>www\images\icons\white\message.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\mobile.png">
+      <PackagePath>www\images\icons\white\mobile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\more.png">
+      <PackagePath>www\images\icons\white\more.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\music.png">
+      <PackagePath>www\images\icons\white\music.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\next.png">
+      <PackagePath>www\images\icons\white\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\orders.png">
+      <PackagePath>www\images\icons\white\orders.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\phone.png">
+      <PackagePath>www\images\icons\white\phone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\photos.png">
+      <PackagePath>www\images\icons\white\photos.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\piechart.png">
+      <PackagePath>www\images\icons\white\piechart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\pinterest.png">
+      <PackagePath>www\images\icons\white\pinterest.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\plus.png">
+      <PackagePath>www\images\icons\white\plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\rocket.png">
+      <PackagePath>www\images\icons\white\rocket.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\search.png">
+      <PackagePath>www\images\icons\white\search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\settings.png">
+      <PackagePath>www\images\icons\white\settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\shop.png">
+      <PackagePath>www\images\icons\white\shop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\slider.png">
+      <PackagePath>www\images\icons\white\slider.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\tables.png">
+      <PackagePath>www\images\icons\white\tables.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\tabs.png">
+      <PackagePath>www\images\icons\white\tabs.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\toggle.png">
+      <PackagePath>www\images\icons\white\toggle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\trash.png">
+      <PackagePath>www\images\icons\white\trash.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\twitter.png">
+      <PackagePath>www\images\icons\white\twitter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\user.png">
+      <PackagePath>www\images\icons\white\user.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\users.png">
+      <PackagePath>www\images\icons\white\users.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\icons\white\video.png">
+      <PackagePath>www\images\icons\white\video.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\logo_image.png">
+      <PackagePath>www\images\logo_image.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\subnav.png">
+      <PackagePath>www\images\subnav.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\swipe_more.png">
+      <PackagePath>www\images\swipe_more.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\switch_11.png">
+      <PackagePath>www\images\switch_11.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\switch_11_active.png">
+      <PackagePath>www\images\switch_11_active.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\switch_12.png">
+      <PackagePath>www\images\switch_12.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\switch_12_active.png">
+      <PackagePath>www\images\switch_12_active.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\switch_13.png">
+      <PackagePath>www\images\switch_13.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\switch_13_active.png">
+      <PackagePath>www\images\switch_13_active.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\trans_black.png">
+      <PackagePath>www\images\trans_black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\trans_black_gradient.png">
+      <PackagePath>www\images\trans_black_gradient.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\audio.min.js">
+      <PackagePath>www\js\audio.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\circlemenu.js">
+      <PackagePath>www\js\circlemenu.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\email.js">
+      <PackagePath>www\js\email.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\framework7.js">
+      <PackagePath>www\js\framework7.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\jquery-1.10.1.min.js">
+      <PackagePath>www\js\jquery-1.10.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\jquery.fitvids.js">
+      <PackagePath>www\js\jquery.fitvids.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\jquery.swipebox.js">
+      <PackagePath>www\js\jquery.swipebox.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\jquery.validate.min.js">
+      <PackagePath>www\js\jquery.validate.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\my-app.js">
+      <PackagePath>www\js\my-app.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\scripts\index.js">
+      <PackagePath>www\scripts\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\css\framework7.css">
+      <PackagePath>www\css\framework7.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\css\reset.css">
+      <PackagePath>www\css\reset.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\css\swipebox.css">
+      <PackagePath>www\css\swipebox.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\css\img\icons.svg">
+      <PackagePath>www\css\img\icons.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\css\img\loader.gif">
+      <PackagePath>www\css\img\loader.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\loader.gif">
+      <PackagePath>www\images\loader.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\player-graphics.gif">
+      <PackagePath>www\js\player-graphics.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\css\img\Thumbs.db">
+      <PackagePath>www\css\img\Thumbs.db</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\avatar.jpg">
+      <PackagePath>www\images\avatar.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\avatar2.jpg">
+      <PackagePath>www\images\avatar2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\avatar3.jpg">
+      <PackagePath>www\images\avatar3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\avatar4.jpg">
+      <PackagePath>www\images\avatar4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\page_photo.jpg">
+      <PackagePath>www\images\page_photo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\page_photo2.jpg">
+      <PackagePath>www\images\page_photo2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\page_photo3.jpg">
+      <PackagePath>www\images\page_photo3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo1.jpg">
+      <PackagePath>www\images\photos\photo1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo10.jpg">
+      <PackagePath>www\images\photos\photo10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo11.jpg">
+      <PackagePath>www\images\photos\photo11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo12.jpg">
+      <PackagePath>www\images\photos\photo12.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo13.jpg">
+      <PackagePath>www\images\photos\photo13.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo14.jpg">
+      <PackagePath>www\images\photos\photo14.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo15.jpg">
+      <PackagePath>www\images\photos\photo15.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo2.jpg">
+      <PackagePath>www\images\photos\photo2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo3.jpg">
+      <PackagePath>www\images\photos\photo3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo4.jpg">
+      <PackagePath>www\images\photos\photo4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo5.jpg">
+      <PackagePath>www\images\photos\photo5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo6.jpg">
+      <PackagePath>www\images\photos\photo6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo7.jpg">
+      <PackagePath>www\images\photos\photo7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo8.jpg">
+      <PackagePath>www\images\photos\photo8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\photos\photo9.jpg">
+      <PackagePath>www\images\photos\photo9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\slide1.jpg">
+      <PackagePath>www\images\slide1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\slide2.jpg">
+      <PackagePath>www\images\slide2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\images\slide3.jpg">
+      <PackagePath>www\images\slide3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\www\js\audiojs.swf">
+      <PackagePath>www\js\audiojs.swf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\MobileResearch\platforms\windows\build\windows\release\anycpu\win8.1\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

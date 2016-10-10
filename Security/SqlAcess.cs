@@ -159,7 +159,7 @@ namespace Security
             try
             { 
                 NpgsqlCommand command = new NpgsqlCommand(sql, this.con); // cria o comendo de acordo com sua conexão e transação
-                Int32 rowsaffected = command.ExecuteNonQuery();
+                //Int32 rowsaffected = command.ExecuteNonQuery();
                 modified = command.ExecuteScalar();
                 this.CloseConnection();
             }

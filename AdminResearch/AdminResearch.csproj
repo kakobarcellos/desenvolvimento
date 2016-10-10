@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="answers.aspx" />
+    <Content Include="cards.aspx" />
     <Content Include="column-with-rotated-series.aspx" />
     <Content Include="css\column-with-rotated-series.css" />
     <Content Include="index.aspx" />
@@ -141,6 +142,13 @@
     </Compile>
     <Compile Include="answers.aspx.designer.cs">
       <DependentUpon>answers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cards.aspx.cs">
+      <DependentUpon>cards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cards.aspx.designer.cs">
+      <DependentUpon>cards.aspx</DependentUpon>
     </Compile>
     <Compile Include="column-with-rotated-series.aspx.cs">
       <DependentUpon>column-with-rotated-series.aspx</DependentUpon>

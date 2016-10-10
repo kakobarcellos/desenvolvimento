@@ -40,7 +40,7 @@
                     <!-- END PAGE BREADCRUMBS -->
                     <!-- BEGIN PAGE CONTENT INNER -->
                     <div class="page-content-inner">
-                        <button type="button" class="btn btn-info btn-lg mt-ladda-btn ladda-button btn-circle" data-style="zoom-in" data-size="l" id="open-card-modal">
+                        <button type="button" class="btn btn-info btn-lg mt-ladda-btn ladda-button btn-circle" data-style="zoom-in" data-size="l" id="open-card-modal" style="width: 240px;">
                             <span class="ladda-label">NOVO CARD</span>
                         </button>
                         <br />
@@ -686,13 +686,20 @@
                                     <div class="form-group has-success">
                                         <label class="col-md-3 control-label">Descrição:</label>
                                         <div class="col-md-9">
-                                            <input type="text" class="form-control" id="card-description" placeholder="Default Input">
+                                            <input type="text" class="form-control" id="card-description" placeholder="Descrição do processo">
                                         </div>
                                     </div>
                                     <div class="form-group has-success">
                                         <label class="col-md-3 control-label">Cliente:</label>
                                         <div class="col-md-9">
-                                            <input type="text" class="form-control" placeholder="Default Input">
+                                            <input type="text" class="form-control" placeholder="Cliente">
+                                        </div>
+                                    </div>
+                                    <div class="form-group has-success">
+                                        <label class="control-label col-md-3">Prazo:</label>
+                                        <div class="col-md-4">
+                                            <input class="form-control" id="date_limit" type="text" />
+                                            <span class="help-block">Informe a data limite</span>
                                         </div>
                                     </div>
                                 </div>
@@ -703,10 +710,6 @@
                             </form>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn green">Save changes</button>
                 </div>
             </div>
             <!-- /.modal-content -->

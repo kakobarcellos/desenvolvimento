@@ -38,7 +38,7 @@ namespace AdminResearch
 
             for (int i = 0; i < resultBacklogs.Rows.Count; i++)
             {
-                backlog += @"<div class='portlet portlet-sortable box white' style='margin-top:15px;'>
+                backlog += @"<div class='portlet portlet-sortable box red-flamingo' style='margin-top:15px;'>
                             <div class='portlet-title'>
                                 <div class='caption'>
                                     " + resultBacklogs.Rows[i]["description"] + @"
@@ -68,7 +68,8 @@ namespace AdminResearch
                                 </div>
                             </div>
                             <div class='portlet-body'>
-
+                                <a>
+                                </a>
                             </div>
                         </div>";
             }
@@ -183,7 +184,7 @@ namespace AdminResearch
                             </div>
                         </div>";
             }
-            
+
         }
 
 

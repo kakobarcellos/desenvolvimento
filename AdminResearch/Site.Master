@@ -354,7 +354,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li> 
+                        </li>
                         <li class="dropdown dropdown-user dropdown-dark">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                 <img alt="" class="img-circle" src="../assets/layouts/layout3/img/avatar9.jpg">
@@ -391,18 +391,18 @@
                                         <i class="icon-key"></i>Log Out </a>
                                 </li>
                             </ul>
-                        </li> 
+                        </li>
                         <li class="dropdown dropdown-extended quick-sidebar-toggler">
                             <span class="sr-only">Toggle Quick Sidebar</span>
                             <i class="icon-logout"></i>
-                        </li> 
+                        </li>
                     </ul>
-                </div> 
+                </div>
             </div>
-        </div> 
+        </div>
 
         <div class="page-header-menu">
-            <div class="container"> 
+            <div class="container">
                 <form class="search-form" action="page_general_search.html" method="GET">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="query">
@@ -413,19 +413,19 @@
                         </span>
                     </div>
                 </form>
-                
+
                 <div class="hor-menu  ">
-                    <ul class="nav navbar-nav"> 
+                    <ul class="nav navbar-nav">
                         <% Context.Response.Write(resultMenu); %>
                     </ul>
-                </div> 
+                </div>
             </div>
-        </div> 
-    </div> 
+        </div>
+    </div>
 
     <asp:ContentPlaceHolder ID="ContentPlaceContainer" runat="server">
     </asp:ContentPlaceHolder>
-     
+
     <div class="page-prefooter">
         <div class="container">
             <div class="row">
@@ -509,7 +509,7 @@
     <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
     <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
     <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-    
+
     <script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
     <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
     <script src="../assets/pages/scripts/portlet-draggable.min.js" type="text/javascript"></script>
@@ -518,7 +518,7 @@
     <script src="assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
     <script src="assets/global/scripts/datatable.js" type="text/javascript"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS -->
-    
+
     <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
     <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
     <script src="../assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
@@ -538,11 +538,14 @@
     <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
     <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
     <script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
-    
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
+    <script src="../assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.input-ip-address-control-1.0.min.js" type="text/javascript"></script>
+    
     <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
-    <!-- END THEME GLOBAL SCRIPTS -->
+    <!-- END THEME GLOBAL SCRIPTS -->    
+    <script src="../assets/pages/scripts/form-input-mask.min.js" type="text/javascript"></script>
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL SCRIPTS -->

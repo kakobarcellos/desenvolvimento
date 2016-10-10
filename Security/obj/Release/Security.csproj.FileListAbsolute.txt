@@ -1,0 +1,8 @@
+C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\Security\bin\Release\Security.dll
+C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\Security\bin\Release\Security.pdb
+C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\Security\bin\Release\mono.security.dll
+C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\Security\bin\Release\Newtonsoft.Json.dll
+C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\Security\bin\Release\npgsql.dll
+C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\Security\obj\Release\Security.csprojResolveAssemblyReference.cache
+C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\Security\obj\Release\Security.dll
+C:\Users\master-saraiva\Documents\Visual Studio 2015\Projects\MobileResearch\Security\obj\Release\Security.pdb
