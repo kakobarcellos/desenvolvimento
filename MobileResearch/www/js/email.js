@@ -1,4 +1,4 @@
-﻿function ajaxContact(theForm) {
+function ajaxContact(theForm) {
 var $ = jQuery;
 $('#loader').fadeIn();
 var formData = $(theForm).serialize(),

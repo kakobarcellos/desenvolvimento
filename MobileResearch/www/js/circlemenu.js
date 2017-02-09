@@ -1,4 +1,4 @@
-﻿function circlemenu() {
+function circlemenu() {
 	var ulc=$("ul#navs");
 	var lic=$("#navs li");
 	var i=lic.length;
